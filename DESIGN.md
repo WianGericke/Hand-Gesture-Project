@@ -55,3 +55,16 @@ OPEN QUESTIONS
 1. How and where does debouncing occur? what is the threshhold?
 2. Exact mechanism for profiling the user's hand shape to ensure accurate use
 3. How to ensure that profiling each gesture, to see if it comes from the user, doesn't take too long. If profiling takes too long, the software may feel slow to respond, taking away from the feel of gesturing at the laptop to get things done.
+
+
+Gesture Analyzer tool V1 scope:
+    - CAPTURE (layer 1)                 (invisible layer to operate camera)
+    - ANALYZER (layer 2)                (analyzation layer for action ping)
+    - DISPATCH (layer 3)                (matching pings to real actions)
+    - gesture specs (data, YAML)        (gesture maps)
+    - gesture to action map (data, YAML)(gesture to action map)
+
+Gesture Ananlyzer tool future scope:
+    - user hand profile + calibration routine
+    - GUI for visualizing tracking + configuring mappings
+    - default/override settings split
